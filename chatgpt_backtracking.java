@@ -1,4 +1,5 @@
-回溯算法通过尝试所有可能的分配组合来找到最优解。这种方法虽然可能会比较耗时，但它能确保找到最接近初始分配比例的方案。
+//  chatgpt 回溯算法
+//  回溯算法通过尝试所有可能的分配组合来找到最优解。这种方法虽然可能会比较耗时，但它能确保找到最接近初始分配比例的方案。
 
 import java.util.*;
 
@@ -69,18 +70,18 @@ public class InvestmentAllocationBacktracking {
     }
 }
 
-代码解释
-初始化:
-
-计算总金额并计算每个投资者的目标金额targetAmounts。
-初始化bestAllocation用于保存最佳分配方案。
-初始化currentAllocation用于保存当前分配状态。
-回溯算法:
-
-使用backtrack方法尝试所有可能的分配方案。
-对每个票据，尝试将其分配给每个投资者，并递归调用backtrack方法。
-如果到达叶节点（所有票据都被分配），计算当前分配方案与目标分配比例的差异。
-更新minDifference和bestAllocation以保存当前最优方案。
-差异计算:
-
-使用calculateDifference方法计算当前分配方案与目标分配比例的差异。
+// 代码解释
+// 初始化:
+//
+// 计算总金额并计算每个投资者的目标金额targetAmounts。
+// 初始化bestAllocation用于保存最佳分配方案。
+// 初始化currentAllocation用于保存当前分配状态。
+// 回溯算法:
+//
+// 使用backtrack方法尝试所有可能的分配方案。
+// 对每个票据，尝试将其分配给每个投资者，并递归调用backtrack方法。
+// 如果到达叶节点（所有票据都被分配），计算当前分配方案与目标分配比例的差异。
+// 更新minDifference和bestAllocation以保存当前最优方案。
+// 差异计算:
+//
+// 使用calculateDifference方法计算当前分配方案与目标分配比例的差异。
